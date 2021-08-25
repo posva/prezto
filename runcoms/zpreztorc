@@ -44,7 +44,6 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'git' \
   'node' \
-  'z' \
   'prompt' \
 
 #

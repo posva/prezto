@@ -11,3 +11,4 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 export PATH="$HOME/.yarn-config/global/node_modules/.bin:$PATH"
+source "$HOME/.cargo/env"
