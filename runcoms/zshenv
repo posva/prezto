@@ -13,3 +13,4 @@ fi
 export PATH="$HOME/.yarn-config/global/node_modules/.bin:$PATH"
 source "$HOME/.cargo/env"
 source "$HOME/dotfiles/aliases"
+eval "$(zoxide init zsh)"
