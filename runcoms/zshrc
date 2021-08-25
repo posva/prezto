@@ -13,3 +13,4 @@ fi
 # Customize to your needs...
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -x "$(which zoxide)" ] && eval "$(zoxide init zsh)"
