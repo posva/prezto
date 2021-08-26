@@ -14,3 +14,19 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -x "$(which zoxide)" ] && eval "$(zoxide init zsh)"
+
+if [[ -f ~/.tokenrc ]]; then
+  source ~/.tokenrc
+fi
+
+# Vi mode
+bindkey -v
+export KEYTIMEOUT=22
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
+bindkey "hh" vi-cmd-mode
+bindkey "jj" vi-cmd-mode
+bindkey "^P" history-substring-search-up
+bindkey "^N" history-substring-search-down
+bindkey "^K" kill-line
+bindkey "^U" backward-kill-line
