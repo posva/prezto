@@ -30,3 +30,18 @@ bindkey "^P" history-substring-search-up
 bindkey "^N" history-substring-search-down
 bindkey "^K" kill-line
 bindkey "^U" backward-kill-line
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/posva/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+# bun completions
+[ -s "/Users/posva/.bun/_bun" ] && source "/Users/posva/.bun/_bun"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/posva/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/posva/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/posva/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/posva/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
