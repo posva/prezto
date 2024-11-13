@@ -34,7 +34,8 @@ bindkey "^K" kill-line
 bindkey "^U" backward-kill-line
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
+# TODO: figure out when to add this
+# export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
