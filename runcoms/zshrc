@@ -16,7 +16,9 @@ fi
 
 # Customize to your needs...
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 [ -x "$(which zoxide)" ] && eval "$(zoxide init zsh)"
 
 [ -f ~/.tokenrc ] && source ~/.tokenrc
