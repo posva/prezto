@@ -1,3 +1,6 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/posva/.zsh/completions:"* ]]; then export FPATH="/Users/posva/.zsh/completions:$FPATH"; fi
+
 # override tmux value so undercurl is shown
 if [ "$TMUX" ]; then
   export TERM=xterm-256color
@@ -39,18 +42,8 @@ bindkey "^P" history-substring-search-up
 bindkey "^N" history-substring-search-down
 bindkey "^K" kill-line
 bindkey "^U" backward-kill-line
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-# TODO: figure out when to add this
-# export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
 
-# pnpm
-export PNPM_HOME="$HOME/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
+eval "$(pyenv init - zsh)"
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# deno
-[ -s "$HOME/.deno/env" ] && source "$HOME/.deno/env"
