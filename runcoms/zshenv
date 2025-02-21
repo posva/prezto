@@ -10,6 +10,8 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+export PATH="$PATH:$HOME/.local/bin"
+
 export PATH="$HOME/.yarn-config/global/node_modules/.bin:$PATH"
 source "$HOME/dotfiles/aliases"
 
@@ -33,7 +35,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 # eval "$(starship init zsh)"
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/posva/.lmstudio/bin"
+export PATH="$PATH:$HOME/.lmstudio/bin"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
