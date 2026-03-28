@@ -34,9 +34,18 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 # eval "$(starship init zsh)"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:$HOME/.lmstudio/bin"
+
+# opencode
+export PATH="$PATH:$HOME/.opencode/bin"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Vite+ bin (https://viteplus.dev)
+[ -s "$HOME/.vite/vite-plus/env" ] && source "$HOME/.vite/vite-plus/env"
+
