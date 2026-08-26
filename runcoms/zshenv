@@ -15,10 +15,6 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$HOME/.yarn-config/global/node_modules/.bin:$PATH"
 source "$HOME/dotfiles/aliases"
 
-# node version manager (volta)
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
 # Rust
 [[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
